@@ -3,112 +3,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-
-@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
-body{
-
-  margin: 0;
-  padding: 0;
-  font-family:serif;
-  background: url(bg.jpg) no-repeat;
-  background-size: cover;
-}
-.login-box{
-  width: 280px;
+<meta charset="ISO-8859-1">
+ <link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ 
+ <style type="text/css">
+  
+  .bg-img
+  {
+     background:url('https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-hd-cool-background-illustration-image_264321.jpg');
+     height:100vh;
+     background-size: cover;
+     
+  }
+ 
+.content{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  color: black;
-}
-.login-box h1{
-  float: left;
-  font-size: 40px;
-  border-bottom: 6px solid #63caf7;
-  margin-bottom: 50px;
-  padding: 13px 0;
-}
-.textbox{
-  width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 8px 0;
-  border-bottom: 1px solid #8BC6EC;
-}
-.textbox i{
-  width: 26px;
-  float: left;
+  z-index: 999;
   text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
 }
-.textbox input{
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+  
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.welcome
+{
+text-align:center;
+   color:white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+ 
+
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
   border: none;
   outline: none;
-  background: none;
-  color: black;
-  font-size: 18px;
-  width: 80%;
-  float: left;
-  margin: 0 10px;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
 }
-.btn{
-  width: 100%;
-  background: none;
-  border: 2px solid #8BC6EC;
-  color: black;
-  padding: 5px;
+.space{
+  margin-top: 16px;
+}
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
   font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
   cursor: pointer;
-  margin:  0;
+  font-family: 'Montserrat',sans-serif;
 }
- p
-    {
-    font-family:serif;
-     height:100%;  
-    font-size:300%;
-    text-align: center;  
-    color: #800080;  
-    padding: 20px;  
-    }  
-
- html
-    {
-         background: linear-gradient(#85FFBD,#FFFB7D);
-        
-         padding-bottom: 45%;
-        
-    }
- 
-   
- 
+.field input[type="submit"]:hover{
+  background: #2691d9;
 }
-
-  
-</style>
-
-<meta charset="ISO-8859-1">
+ 
+ </style>
 <title>User Login</title>
-      <link rel="stylesheet" href="css/style.css">
-<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >-->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" > -->
 <!--integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 </head>
-<body>
-<p>Welcome to Online Insurance Claim Registration</p>
-<div class="login-box">
-<form id="login" method="post" action="login.htm">
-<h1>Login</h1>
-<div class="textbox">
-Login ID :<input type="text" name="username" maxlength="20"><br><br>
-</div>
-<div class="textbox">
-Password:<input type="password" name="password" maxlength="12"><br><br>
-</div>
-<div class="textbox">
- <input type="submit" value="Login">
- </div>
-</form>
-</div>
+<body  >
 
+<div class="bg-img">
+     <div class="welcome">
+          <p class="h2 text-center" >Welcome to Online Insurance Claim Registration
+</p>
+     </div>
+      <div class="content">
+        <header>Login Form</header>
+        <form method="post" action="login.htm">
+          <div class="field space">
+            <span class="fa fa-user"></span>
+            <input type="text" name="username" maxlength="20" required placeholder="UserName">
+          </div>
+          
+           <div class="field space">
+            <span class="fa fa-lock"></span>
+            <input type="text" name="password" maxlength="12" required placeholder="Password">
+          </div>
+          
+          <div class="field space">
+            
+            <input type="submit" value="Login">
+          </div>
+         </form>
+        </div>
+</div> 
+
+
+
+</div>-->
 </body>
 </html>
